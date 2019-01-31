@@ -58,4 +58,6 @@ app.use((req, res, next) => {
 
 app.use(passportManager.initialize());
 
+console.log("dev branch");
+
 export default app;
