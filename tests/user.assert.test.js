@@ -1,7 +1,7 @@
 import User from "../models/user.model";
 const assert = require('chai').assert;
 
-describe('Assert', () => {
+describe('# Assert', () => {
     it('should create the user', (done) => {
         const newUserData = {
             "username": "assert@gmail.com",

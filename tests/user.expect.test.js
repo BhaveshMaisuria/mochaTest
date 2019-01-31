@@ -1,7 +1,7 @@
 import User from "../models/user.model";
 const expect = require('chai').expect;
 
-describe('Expect', () => {
+describe('# Expect', () => {
     it('should create the user', (done) => {
 
         const newUserData = {

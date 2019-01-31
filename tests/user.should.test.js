@@ -1,7 +1,7 @@
 import User from "../models/user.model";
 const should = require('chai').should();
 
-describe('Should', () => {
+describe('# Should', () => {
     it('should create the user', (done) => {
 
         const newUserData = {
