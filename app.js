@@ -30,7 +30,6 @@ app.use(express.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-console.log("app router call");
 // routes setup
 app.use('/', router);
 
