@@ -1,4 +1,12 @@
 //Jenkins file only to tutorial example
+
+// stage('Cloning Git') {
+//       steps {
+//         git 'https://github.com/BhaveshMaisuria/mochaTest.git'
+//       }
+//     }
+
+
 pipeline {
   agent any
     
@@ -6,11 +14,7 @@ pipeline {
     
   stages {
         
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/BhaveshMaisuria/mochaTest.git'
-      }
-    }
+    
 
     stage('Install dependencies') {
       steps {
