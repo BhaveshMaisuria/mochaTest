@@ -10,10 +10,6 @@ pipeline {
   tools {nodejs "node 10"}
     
   stages {
-
-    triggers {
-      pollSCM('*/5 * * * *') // Enabling being build on Push
-    }
    
     stage('Install dependencies') {
       steps {
