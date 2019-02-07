@@ -1,4 +1,9 @@
 //Jenkins file only to tutorial example
+//  triggers {
+//       pollSCM('*/5 * * * *') // Enabling being build on Push
+//     }
+
+
 pipeline {
   agent any
     
@@ -6,6 +11,10 @@ pipeline {
     
   stages {
 
+    triggers {
+      pollSCM('*/5 * * * *') // Enabling being build on Push
+    }
+   
     stage('Install dependencies') {
       steps {
         sh 'npm install'
