@@ -3,10 +3,8 @@
 //       pollSCM('*/5 * * * *') // Enabling being build on Push
 //     }
 
-
 pipeline {
   agent any
-    
   tools {nodejs "node 10"}
     
   stages {
@@ -21,6 +19,7 @@ pipeline {
       steps {
          sh 'npm test'
       }
-    }      
+    }   
+       
   }
 }
