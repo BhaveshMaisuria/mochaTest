@@ -30,12 +30,6 @@ pipeline {
     
   stages {
         
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/BhaveshMaisuria/mochaTest.git'
-      }
-    }
-
     stage('Install dependencies') {
       steps {
         sh 'npm install'
