@@ -1,16 +1,23 @@
-import User from "../models/user.model";
-const assert = require('chai').assert;
+'use strict';
 
-describe('# Assert', () => {
-    it('should create the user', (done) => {
-        const newUserData = {
+var _user = require('../models/user.model');
+
+var _user2 = _interopRequireDefault(_user);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var assert = require('chai').assert;
+
+describe('# Assert', function () {
+    it('should create the user', function (done) {
+        var newUserData = {
             "username": "assert@gmail.com",
             "password": "test"
         };
 
-        const UserModel = new User(newUserData);
-        UserModel.save((err, data) => {
-            assert.isNull(err);
+        var UserModel = new _user2.default(newUserData);
+        UserModel.save(function (err, data) {
+            assert.isNull(data);
 
             assert.isDefined(data);
             assert.isObject(data);
