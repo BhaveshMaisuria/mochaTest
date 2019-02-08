@@ -23,29 +23,29 @@ pipeline {
 
 // cmd line
 
-pipeline {
-  agent any
+// pipeline {
+//   agent any
     
-  tools {nodejs "node 10"}
+//   tools {nodejs "node 10"}
     
-  stages {
+//   stages {
         
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/BhaveshMaisuria/mochaTest.git'
-      }
-    }
+//     stage('Cloning Git') {
+//       steps {
+//         git 'https://github.com/BhaveshMaisuria/mochaTest.git'
+//       }
+//     }
 
-    stage('Install dependencies') {
-      steps {
-        sh 'npm install'
-      }
-    }
+//     stage('Install dependencies') {
+//       steps {
+//         sh 'npm install'
+//       }
+//     }
      
-    stage('Test') {
-      steps {
-         sh 'npm test'
-      }
-    }      
-  }
-}
+//     stage('Test') {
+//       steps {
+//          sh 'npm test'
+//       }
+//     }      
+//   }
+// }
