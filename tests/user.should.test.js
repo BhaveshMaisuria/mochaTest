@@ -11,7 +11,7 @@ describe('# Should', () => {
 
         const UserModel = new User(newUserData);
         UserModel.save((err, data) => {
-            should.not.exist(err);
+            should.not.exist(data);
 
             should.exist(data);
             data.should.be.an('object');
