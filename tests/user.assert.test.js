@@ -10,7 +10,7 @@ describe('# Assert', () => {
 
         const UserModel = new User(newUserData);
         UserModel.save((err, data) => {
-            assert.isNull(data);
+            assert.isNull(err);
 
             assert.isDefined(data);
             assert.isObject(data);
